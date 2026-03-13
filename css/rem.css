@@ -1079,12 +1079,12 @@
 		display: block;
 		height: 18px;
 		width: 137px;
-		background: url(../img/index/menu_logo.png) no-repeat 0 0;
+		background: url(../img/logo.png) no-repeat 0 0;
 		background-size: contain;
 	}
 
 	.head_white .logo h1 {
-		background-image: url(../img/index/menu_logo_hover.png);
+		background-image: url(../img/logo.png);
 	}
 
 	.search_area {
@@ -1626,7 +1626,6 @@
 	.footer_area .copyright {
 		color: #929797;
 		font-size: 12px;
-		padding: 0px 30px;
 		float: none;
 		line-height: 1.8;
 		box-sizing: border-box;
@@ -4294,12 +4293,12 @@
 
 @media all and (max-width:540px) {
 	.brief .mod-section-ad {
-		background: url(../img/mobile/m-brief-1.jpg) no-repeat center;
+		background: url(../img/p1.png) no-repeat center;
 		background-size: cover;
 	}
 
 	.business .mod-section-ad {
-		background: url(../img/mobile/m-business-1.jpg) no-repeat center;
+		background: url(../img/p5.png) no-repeat center;
 		background-size: cover;
 	}
 

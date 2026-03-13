@@ -267,7 +267,7 @@
 
 .ten_mobile--float .ten_logo,
 .ten_root--inner .ten_mobile .ten_logo {
-    background-image: url(../img/index/menu_logo_hover.png);
+    background-image: url(../img/logo.png);
     transition: ease all 0.3s;
 }
 

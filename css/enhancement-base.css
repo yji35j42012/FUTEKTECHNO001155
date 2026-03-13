@@ -830,7 +830,7 @@ a:hover .ten_download:before,
 .ten_header--float .ten_logo,
 .ten_header:hover .ten_logo,
 .ten_root--inner .ten_header .ten_logo {
-    background-image: url(../img/index/menu_logo_hover.png);
+    background-image: url(../img/logo.png);
     transition: ease all 0.3s;
 }
 
@@ -1084,7 +1084,7 @@ a:hover .ten_download:before,
 
 .ten_mobile--float .ten_logo,
 .ten_root--inner .ten_mobile .ten_logo {
-    background-image: url(../img/index/menu_logo_hover.png);
+    background-image: url(../logo.png);
     transition: ease all 0.3s;
 }
 
@@ -1377,7 +1377,7 @@ a:hover .ten_download:before,
 .ten_footer .ten_logo {
     width: 220px;
     height: 30px;
-    background-image: url(../img/index/menu_logo_hover.png);
+    background-image: url(../logo.png);
 }
 
 @media screen and (max-width: 1279px) {
