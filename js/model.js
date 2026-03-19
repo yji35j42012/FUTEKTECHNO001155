@@ -35,7 +35,7 @@ wrap_footer.innerHTML = `
 		<li>
 			<a href="#" class="wechat-btn">
 				<i class="icon i_wechat"></i>
-				<img class="wechat-code" src="/img/index/wechat-code.jpg" alt="img" />
+				<img class="wechat-code" src="./img/index/wechat-code.jpg" alt="img" />
 			</a>
 		</li>
 		<li>
@@ -88,7 +88,7 @@ wrap_footer.innerHTML = `
 </div>
 
 <div class="logo_tencent">
-	<img src="/img/logo.png" alt="FUTEK TECHNOLOGY " />
+	<img src="./img/logo.png" alt="FUTEK TECHNOLOGY " />
 </div>
 <div class="footer_area">
 	<div class="consultation">
