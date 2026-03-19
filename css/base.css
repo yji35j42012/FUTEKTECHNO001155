@@ -648,8 +648,9 @@ h6 {
 .footer_con {
 	display: flex;
 	flex-wrap: wrap;
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0px auto;
+	/* padding: 0 20px; */
 	position: relative;
 }
 
@@ -799,7 +800,6 @@ h6 {
 	bottom: 24px;
 	display: block;
 	width: 100%;
-	padding: 0 30px;
 }
 
 .footer_area .links li {
@@ -2312,7 +2312,7 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 	bottom: 40px;
 }
 
-.contact_mail{
+.contact_mail {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2325,11 +2325,13 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 	background-position: center;
 	background-size: cover;
 }
-.contact_mail .normal_inp{
+
+.contact_mail .normal_inp {
 	width: 40%;
 	margin-right: 15px;
 }
-.contact_mail_title{
+
+.contact_mail_title {
 	width: 100%;
 	margin-bottom: 5px;
 	font-size: 32px;
@@ -2337,6 +2339,7 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 	text-align: center;
 	color: #5f6464;
 }
+
 .text-left {
 	text-align: left !important;
 }
@@ -2377,9 +2380,11 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 	padding: 20px 0;
 	background-color: #fbfbfb;
 }
+
 .wrap_footer.con .consultation {
 	display: none;
 }
+
 .normal_inp {
 	display: block;
 	height: 38px;
@@ -2423,6 +2428,7 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 .consultation .normal_sel {
 	width: calc(100% / 4 - 6px);
 	margin-right: 8px;
+	box-sizing: border-box;
 }
 
 
@@ -2542,10 +2548,10 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 .contact {
 	display: flex;
 	flex-wrap: wrap;
-	width: 96%;
+	/* width: 96%; */
 	max-width: 1200px;
 	margin: auto;
-	padding: 96px 0;
+	padding: 96px 20px;
 }
 
 .contact_pic,
@@ -2563,7 +2569,6 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 
 .contact_txt {
 	padding: 32px 0;
-	padding-left: 16px;
 }
 
 .contact_txt_title {
@@ -2615,14 +2620,19 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
 .contact .normal_inp:nth-child(3) {
 	margin-right: 5px;
 }
-.noScroll ul{
-left: 0 !important;
+
+.noScroll ul {
+	left: 0 !important;
 }
+
 @media screen and (max-width: 848px) {
-	.contact_pic,.contact_txt{
+
+	.contact_pic,
+	.contact_txt {
 		width: 100%;
 	}
 }
+
 @media (max-width:768px) {
 
 	.consultation .normal_inp,
@@ -2648,10 +2658,11 @@ left: 0 !important;
 	}
 
 	.contact_txt {
-		padding: 32px 16px;
+		padding: 32px 0px;
 		box-sizing: border-box;
 	}
 }
+
 @media screen and (max-width: 750px) {
 	.en-us .mod-section-ad .desc {
 		display: none;
@@ -2708,7 +2719,9 @@ left: 0 !important;
 	.normal_sel {
 		margin-bottom: 8px;
 	}
-	.contact .normal_inp:nth-child(1), .contact .normal_inp:nth-child(3){
+
+	.contact .normal_inp:nth-child(1),
+	.contact .normal_inp:nth-child(3) {
 		margin-right: 0;
 	}
 }

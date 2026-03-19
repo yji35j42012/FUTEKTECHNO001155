@@ -108,8 +108,10 @@ wrap_footer.innerHTML = `
 	</div>
 	<div class="add">3 F., No. 222, Sec. 4, Zhongxiao E. Rd., Da'an Dist., Taipei City 106059, Taiwan
 		(R.O.C.)</div>
+		<a style='color:#5f6464' href="mailto:service@futektechno001155.com" class="email-link">service@futektechno001155.com</a>
 	<div class="copyright">
 		Copyright © 1998 - 2026 Tencent. All Rights Reserved.
+		<br class="flag_m" /> 
 		<br class="flag_m" />FUTEK TECHNOLOGY
 	</div>
 </div>

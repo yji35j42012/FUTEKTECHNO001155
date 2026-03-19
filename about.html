@@ -79,14 +79,13 @@
 							</div>
 							<div class="brief-text-box">
 								<h4>FUTEK TECHNOLOGY is a world-leading internet and technology company that develops
-									innovative
-									products and services to improve the quality of life of people around the world.
+									innovative products and services to improve the quality of life of people around the
+									world.
 								</h4>
 								<p class="desc">
 									<br>Who Are We <br>
-									At FUTEK TECHNOLOGY , we are more than just an IT
-									software company; we are your partners in harnessing the power of
-									technology to drive your business forward.<br>
+									At FUTEK TECHNOLOGY , we are more than just an IT software company; we are your
+									partners in harnessing the power of technology to drive your business forward.<br>
 									With a passionate team of experts, we combine innovation, expertise, and dedication
 									to create transformative solutions that meet the evolving needs of today's digital
 									landscape.<br>
@@ -101,7 +100,7 @@
 							</div>
 							<div class="abpicbox">
 								<span><img class="abpicbox_1" src="./img/p12.png" alt=""></span>
-								<span><img src="./img/p13.jpeg" alt=""></span>								
+								<span><img src="./img/p13.jpeg" alt=""></span>
 							</div>
 						</div>
 					</div>
@@ -118,7 +117,29 @@
 		<script src="./js/model.js"></script>
 		<link rel="stylesheet" type="text/css" href="/css/rem.css" />
 		<link rel="stylesheet" type="text/css" href="/css/rem-2.css" />
+		<script>
+			document.querySelectorAll(".li .title").forEach(title => {
+				title.addEventListener("click", () => {
+					const li = title.parentElement;
+					const conten = li.querySelector(".content");
 
+					// 如果已展開 → 收合
+					if (conten.style.maxHeight && conten.style.maxHeight !== "0px") {
+						conten.style.maxHeight = null; // 收合
+					} else {
+						// 可選：先收合其他（單一展開模式）
+						document.querySelectorAll(".li .content").forEach(other => {
+							if (other !== conten) {
+								other.style.maxHeight = null;
+							}
+						});
+
+						// 展開目前的
+						conten.style.maxHeight = conten.scrollHeight + "px";
+					}
+				});
+			});
+		</script>
 
 </body>
 
