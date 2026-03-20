@@ -119,3 +119,36 @@ wrap_footer.innerHTML = `
 </div>
 `;
 
+
+
+document.body.insertAdjacentHTML("beforeend", 
+`
+<div class="pop">
+<div class="pop_box">
+	<a class="i_close" style="display: inline;"></a>
+	<div class="pop_title">Get Free Consultation</div>
+	<div class="pop_txt">
+		Thanks for contacting us! We will be in touch with you shortly.
+	</div>
+</div>
+<div class="pop_box">
+	<a class="i_close" style="display: inline;"></a>
+	<div class="pop_title">Get in Touch with Us</div>
+	<div class="pop_txt">
+		We're eager to hear from you. Whether you have questions, ideas, or are ready to embark
+		on a new digital journey, we're here to help. Our team of dedicated professionals is just a
+		message away. Reach out today and let's explore how FUTEK TECHNOLOGY LIMITED can empower your
+		business through transformative technology. Your vision is our
+		priority, and we're excited to turn it into reality.
+		Thanks for contacting us! We will be in touch with you shortly.
+	</div>
+</div>
+<div class="pop_box">
+	<a class="i_close" style="display: inline;"></a>
+	<div class="pop_title"></div>
+	<div class="pop_txt">
+		Thanks for contacting us! We will be in touch with you shortly.
+	</div>
+</div>
+</div>
+`);
