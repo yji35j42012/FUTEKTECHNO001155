@@ -62,38 +62,42 @@
 						Thanks for contacting us! We will be in touch with you shortly.
 					</div>
 
-					<div class="contact_form">
+					<form class="contact_form" id="contact_send">
 						<label class="normal_inp">
-							<input type="text" placeholder="First Name*">
+							<input type="text" placeholder="First Name*" name="firstname" required>
+						</label> 
+						<label class="normal_inp">
+							<input type="text" placeholder="Last Name*" name="lastname" required>
 						</label>
 						<label class="normal_inp">
-							<input type="text" placeholder="Last Name*">
+							<input type="email" placeholder="Your Email*" name="email" required>
 						</label>
 						<label class="normal_inp">
-							<input type="text" placeholder="Your Email*">
-						</label>
-						<label class="normal_inp">
-							<input type="text" placeholder="Your Phone Number*">
+							<input type="text" placeholder="Your Phone Number*" name="phone" required>
 						</label>
 						<label class="normal_sel">
-							<select>
+							<select name="service" required>
 								<option value="">Select Service</option>
+								<option value="ai-iot">AI / IoT Solutions</option>
+								<option value="digital-transformation">Digital Transformation</option>
+								<option value="partnership">Partnership</option>
+								<option value="consultation">Consultation</option>
 							</select>
 						</label>
 						<label class="normal_textarea">
-							<textarea rows="5" placeholder="Message*"></textarea>
+							<textarea rows="5" placeholder="Message*" name="message" required></textarea>
 						</label>
 						<button class="normal_btn">Sent Message</button>
-					</div>
+					</form>
 				</div>
 
-				<div class="contact_mail">
+				<form class="contact_mail" id="sub_send">
 					<div class="contact_mail_title">Subscribe to Our Newsletter</div>
 					<label class="normal_inp">
-						<input type="text" placeholder="Your Email Address*">
+						<input type="email" placeholder="Your Email Address*" required>
 					</label>
 					<button class="normal_btn">SUBSCRIBE</button>
-				</div>
+				</form>
 			</div>
 		</div>
 
