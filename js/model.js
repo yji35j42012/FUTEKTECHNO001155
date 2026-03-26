@@ -68,11 +68,8 @@ wrap_footer.innerHTML = `
 		<i class="icon icon_arrow"></i>
 	</div>
 	<ul class="contact_list">
-		<li><a target="_blank" href="customer-service.html">Customer Services</a></li>
-		<li><a target="_blank" href="partnership.html">Partnership</a></li>
-		<li><a target="_blank" href="https://spd.tencent.com/portal">Procurement</a></li>
-		<li><a target="_blank" href="compliance.html">Compliance</a></li>
-		<li><a target="_blank" href="enquiry.html">Media & Investors</a></li>
+		<li><a target="_blank" href="services.html">Customer Services</a></li>
+		<li><a target="_blank" href="contact.html">Contact</a></li>
 	</ul>
 </div>
 
@@ -82,7 +79,6 @@ wrap_footer.innerHTML = `
 		<i class="icon icon_arrow"></i>
 	</div>
 	<ul class="legal_list">
-		<li><a target="_blank" href="service-agreement.html">Service Agreement</a></li>
 		<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
 	</ul>
 </div>

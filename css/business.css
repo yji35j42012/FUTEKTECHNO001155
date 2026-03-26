@@ -161,7 +161,15 @@
 }
 
 .business .brand-item .b-flx img {
-    width: 100%;
+    width: 35%;
+}
+
+@media (max-width:480px) {
+    .business .brand-item .b-flx .pic6 {
+        width: auto;
+        max-width: 100%;
+        min-width: auto !important;
+    }
 }
 
 .swiper-flx {
@@ -458,6 +466,7 @@
     .en-us .business-user .section-item.section-one-item .mess-text {
         margin-top: 0px;
     }
+
     .en-us .business-user .section-item .product-box {
         padding-top: 50px;
     }
