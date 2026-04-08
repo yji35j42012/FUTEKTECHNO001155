@@ -1,0 +1,306 @@
+body {
+    background: url("../images/login_bg.jpg") no-repeat center/cover, #052463;
+}
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+.login_box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.login_info {
+    position: relative;
+    display: inline-block;
+    /* padding: 95px 90px; */
+    padding: 56px 75px 67px;
+    background: rgba(10, 26, 71, 0.45);
+    border-radius: 10px;
+    text-align: center;
+}
+.login_box_title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+}
+.login_input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    height: 45px;
+    margin-top: 50px;
+    padding: 0 0 0 45px;
+    background-color: rgba(255, 255, 255, 0.33);
+    border-radius: 5px;
+}
+.login_input input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 0 65px;
+    font-size: 18px;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+.login_input input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7) inset;
+}
+.login_input input::placeholder {
+    color: #fff;
+}
+.login_input input::-webkit-input-placeholder {
+    color: #fff;
+}
+.login_input input:-ms-input-placeholder {
+    color: #fff;
+}
+.login_input input::-moz-placeholder {
+    color: #fff;
+}
+
+.login_input:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: contain;
+    pointer-events: none;
+}
+.login_input._acc:before {
+    width: 24px;
+    height: 22px;
+    background-image: url("../images/icon_login_acc.svg");
+}
+.login_input._pass:before {
+    width: 24px;
+    height: 28px;
+    background-image: url("../images/icon_pass.svg");
+}
+.login_checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+.login_checkbox span {
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 3px;
+}
+.login_checkbox input:checked + span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 3px;
+    transform: rotate(-48deg);
+    top: 4px;
+    left: 3px;
+    background: transparent;
+    border-width: 2px 2px;
+    border-style: none none solid solid;
+    border-color: #ffffff #ffffff;
+    border-image: initial;
+    border-top: none;
+    border-right: none;
+}
+.login_btn {
+    width: 75%;
+    height: 45px;
+    margin-top: 35px;
+    background-color: #007df3;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.normal_select {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-width: 100px;
+    height: 45px;
+    background-color: rgba(10, 26, 71, 0.45);
+    color: #fff;
+    border-radius: 5px;
+}
+.normal_select span {
+    /* display: none; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.login_info .normal_select span {
+    text-align: center;
+    justify-content: center;
+}
+.normal_select_ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 5px);
+    display: block;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    transition-duration: 0.3s;
+}
+.normal_select.on .normal_select_ul {
+    height: 150px;
+}
+.normal_select_ul li {
+    flex: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    color: #007df3;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.normal_select_ul li.on {
+    color: #fdb33d;
+}
+.normal_select_ul li.on::before,
+.normal_select_ul li.on::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #fdb33d;
+}
+.normal_select_ul li.on::before {
+    transform: translateX(-100%);
+}
+.normal_select_ul li.on::after {
+    transform: translateX(100%);
+}
+.login_info .normal_select {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.33);
+}
+.login_info .normal_select:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    display: block;
+    width: 24px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: contain;
+    background-image: url("../images/icon_currency.svg");
+    pointer-events: none;
+}
+.normal_select:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    width: 15px;
+    height: 7px;
+    background: url("../images/icon_down_arr.svg") no-repeat center/contain;
+}
+.normal_select select {
+    width: 100%;
+    height: 100%;
+    padding: 14px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.login_note{
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    color: #f55;
+}
+.login_note.on{
+    display: block;
+}
+.login_info .normal_select select {
+    text-align: center;
+}
+.login_box_title + .normal_select {
+    margin-top: 50px;
+}
+.login_box .normal_select {
+    margin-bottom: 20px;
+}
+.login_info .normal_select {
+    margin-bottom: 0;
+}
+.normal_select + .login_input,
+.login_input + .login_input {
+    margin-top: 35px;
+}
+.select_showPC {
+    display: none;
+}
+.select_showPH {
+    display: block;
+}
+
+@media (pointer: fine),
+    (pointer: fine) and (-moz-touch-enabled: 0),
+    screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+    .select_showPC {
+        display: flex;
+    }
+    .select_showPH {
+        display: none;
+    }
+    .normal_select_ul li:hover {
+        color: #fdb33d;
+    }
+    .login_btn:hover {
+        opacity: 0.8;
+    }
+}
+/* .login_info */
+@media only screen and (max-width: 596px) {
+    .login_box {
+        width: 100%;
+    }
+    .login_info {
+        width: 100%;
+        padding: 35px 25px 65px;
+        background-color: transparent;
+    }
+    .normal_select {
+        background-color: transparent;
+    }
+    .login_input {
+        min-width: auto;
+    }
+}
+.login_btn:active {
+    opacity: 0.8;
+}

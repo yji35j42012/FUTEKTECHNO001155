@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../style/reset.css">
+	<link rel="stylesheet" href="../style/login_curr.css">
+	<script type="text/javascript" src="./js/login.js"></script>
+	<script type="text/javascript" src="/func/api_rec/api_demo.js"></script>
+</head>
+
+<body onload="onload();">
+	<div  id='logindisplay'  class="login_container">
+		<div class="login_box">
+			<div class="login_info">
+				<div class="login_box_title">SIGN IN</div>
+				<!-- 幣別下拉 打開class加on-->
+				<label class="normal_select">
+					<span class="select_showPC">人民幣</span>
+					<!-- 電腦用自製下拉 當前幣值在class加on-->
+					<ul class="normal_select_ul select_showPC">
+						<li data-type='cur' data-value="RMB2">*ART_index_rmb*</li>
+						<li data-type='cur' data-value="HKD2">*ART_index_hkd*</li>
+						<li data-type='cur' data-value="USD2">*ART_index_usd*</li>
+						<li data-type='cur' data-value="MYR2">*ART_index_myr*</li>
+						<li data-type='cur' data-value="SGD2">*ART_index_sgd*</li>
+						<li data-type='cur' data-value="THB2">*ART_index_thb*</li>
+						<li data-type='cur' data-value="GBP2">*ART_index_gbp*</li>
+						<li data-type='cur' data-value="JPY2">*ART_index_jqy*</li>
+						<li data-type='cur' data-value="EUR2">*ART_index_eur*</li>
+						<li data-type='cur' data-value="IND2">*ART_index_ind*</li>
+						<!-- <li data-type='cur' data-value="NTD2">*ART_index_ntd*</li>
+						<li data-type='cur' data-value="GOD2">*ART_index_god*</li> -->
+						<li data-type='cur' data-value="VND2">*ART_index_vnd*</li>
+						<li data-type='cur' data-value="KRW2">*ART_index_krw*</li>
+						<li data-type='cur' data-value="INR2">*ART_index_inr*</li>
+						<li data-type='cur' data-value="USDT2">*ART_index_usdt*</li>
+						<li data-type='cur' data-value="BRL2">*ART_index_brl*</li>
+						<li data-type='cur' data-value="PHP2">*ART_index_php*</li>
+					</ul>
+					<!-- 手機用內建下拉 -->
+					<select id="curselect" name="select" id="langx" class="select_showPH">
+						<option value="RMB2">*ART_index_rmb*</option>
+						<option value="HKD2">*ART_index_hkd*</option>
+						<option value="USD2">*ART_index_usd*</option>
+						<option value="MYR2">*ART_index_myr*</option>
+						<option value="SGD2">*ART_index_sgd*</option>
+						<option value="THB2">*ART_index_thb*</option>
+						<option value="GBP2">*ART_index_gbp*</option>
+						<option value="JPY2">*ART_index_jqy*</option>
+						<option value="EUR2">*ART_index_eur*</option>
+						<option value="IND2">*ART_index_ind*</option>
+						<!-- <option value="NTD2">*ART_index_ntd*</option>
+						<option value="GOD2">*ART_index_god*</option> -->
+						<option value="VND2">*ART_index_vnd*</option>
+						<option value="KRW2">*ART_index_krw*</option>
+						<option value="INR2">*ART_index_inr*</option>
+						<option value="USDT2">*ART_index_usdt*</option>
+						<option value="BRL2">*ART_index_brl*</option>
+						<option value="PHP2">*ART_index_php*</option>
+					</select>
+				</label>
+				<label class="login_input _acc">
+					<input type="text" name="text" autocapitalize="off" placeholder="Username">
+				</label>
+				<label class="login_input _pass">
+					<input type="password" name="text" placeholder="Password">
+				</label>
+				<!-- 打開在class加上on -->
+				<span id='loginmsg' class="login_note">您輸入的帳號，密碼不正確，請在嘗試輸入</span>
+				<button  id='loginbtn' name="button" class="login_btn">Login</button>
+			</div>
+		</div>
+	</div>
+	<!-- loading 打開class加on-->
+	<div id="normal_loading" class="normal_loading">
+		<div class="lds-default">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="normal_loading_txt">
+			*ART_index_normalLoadingTxt*
+		</div>
+	</div>
+	<!-- loading -->
+</body>
+<!-- 替換語系 -->
+<script type="text/javascript" src="../tpljson/index.json"></script>
+<script>
+	var langx = findGetParameter("langx");
+	load_art(document, artjson, langx);
+</script>
+</html>

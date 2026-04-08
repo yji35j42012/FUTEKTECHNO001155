@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="renderer" content="webkit">
+	<title>I cash線上平台</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/animation.css">
+	<link rel="stylesheet" href="./style/index.css">
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="/func/api_rec/api_demo.js"></script>
+</head>
+
+<body class="unScroll" ontouchstart="" onload="onload();">
+	<!-- 不能滑動 在body 加class="unScroll" -->
+	<!-- 最上列 -->
+	<div class="header">
+		<div class="logo logo_title"></div>
+		<!-- 手機版 打開menu在 .menu_btn + active -->
+		<div class="menu_btn" id="menu_btn">
+			<i></i>
+		</div>
+		<div class="menu_panel">
+			<ul class="menu" id="menu">
+				<li class="logo logo_title"></li>
+				<li>
+					<a id="menu_btn_hm1">*ART_index_page1*</a>
+				</li>
+				<li>
+					<a id="menu_btn_move_about">*ART_index_page2*</a>
+				</li>
+				<li>
+					<a id="menu_btn_hm2">*ART_index_page3*</a>
+				</li>
+				<li>
+					<a id="menu_btn_hm3">*ART_index_page4*</a>
+				</li>
+				<li>
+					<a id="menu_btn_hm4">*ART_index_page5*</a>
+				</li>
+				<li>
+					<a id="menu_btn_hm6">*ART_index_page6*</a>
+				</li>
+				<li style="display: none">*ART_index_page7*</li>
+				<!-- 打開第二層選單，在class 加 on -->
+				<li id="menu_btn_langx" class="lang">
+					<span class="lang_txtbox">
+						<tt id="lang_title" class="lang_title">*ART_index_lang*</tt>
+						<tt id="lang_txt" class="lang_txt">繁體中文</tt>
+						<select class="lagn_ph">
+							<option value="zh-tw">繁體中文</option>
+							<option value="zh-cn">簡體</option>
+							<option value="en-us">English</option>
+							<option value="ko-kr">한국어</option>
+							<option value="ja-jp">日本語</option>
+							<option value="vi-vn">Việt Nam</option>
+							<option value="sa-in">हिन्दी</option>
+							<option value="th-th">ไทย</option>
+						</select>
+					</span>
+					<ul id="second_menu" class="second_menu">
+						<li value="zh-tw" >繁體中文</li>
+						<li value="zh-cn">簡體</li>
+						<li value="en-us">English</li>
+						<li value="ko-kr">한국어</li>
+						<li value="ja-jp">日本語</li>
+						<li value="vi-vn">Việt Nam</li>
+						<li value="sa-in">हिन्दी</li>
+						<li value="th-th">ไทย</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 最上列 -->
+	<!-- 首頁 -->
+	<!-- loading跑完 加active -->
+	<div id="hm_1" class="home">
+		<!-- 動畫 -->
+		<ul class="cloud_amimate">
+			<li></li>
+		</ul>
+		<!-- 動畫 -->
+		<div class="home_info">
+			<div class="mod_midtxt mod_font_en">
+				<p>LOCAL OPERATION</p>
+				<p>GLOBAL VISION</p>
+			</div>
+			<div class="home_txt">
+				<ul>
+					<li class="title">*ART_index_home_title*</li>
+					<li>*ART_index_home_txt1*</li>
+					<li>*ART_index_home_txt2*</li>
+					<li>*ART_index_home_txt3*</li>
+					<li>*ART_index_home_txt4*</li>
+					<li>*ART_index_home_txt5*</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 首頁 -->
+
+	<!-- banner -->
+	<div id="move_about" class="banner">
+		<div class="banner_group" id="banner_group">
+			<!-- banner 01 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item1" id="banner_item1">
+				<div class="banner_pic">
+					<img class="pic_cell1" src="./images/pic_cell1.png" alt="">
+					<img class="pic_cell2" src="./images/pic_cell2.png" alt="">
+					<img class="pic_cell3" src="./images/pic_cell3.png" alt="">
+					<img class="pic_cell4" src="./images/pic_cell4.png" alt="">
+				</div>
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*ART_index_banner_bigtxt1*">
+						*ART_index_banner_bigtxt1*
+					</div>
+					<ul class="txt_icon">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="banner_minitxt">
+						*ART_index_banner_title1*
+						*ART_index_banner_txt1a*
+						<br>
+						<br>
+						*ART_index_banner_txt1b*
+						*ART_index_banner_txt1c*
+					</div>
+				</div>
+			</div>
+			<!-- banner 02 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item2" id="banner_item2">
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*
+					ART_index_page2*">*ART_index_page2*</div>
+					<div class="banner_minitxt">
+						*ART_index_banner_txt2t*
+						*ART_index_banner_txt2a* 
+						*ART_index_banner_txt2b*
+						*ART_index_banner_txt2c*
+					</div>
+				</div>
+				<div class="banner_pic">
+					<img class="icon_poker4" src="./images/icon_poker4.svg" alt="">
+					<img class="icon_poker3" src="./images/icon_poker3.svg" alt="">
+					<img class="icon_poker2" src="./images/icon_poker2.svg" alt="">
+					<img class="icon_poker1" src="./images/icon_poker1.svg" alt="">
+					<img src="./images/04.png" alt="">
+				</div>
+			</div>
+			<!-- banner 03 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item3" id="banner_item3">
+				<div class="banner_pic">
+					<img class="pic_cell03" src="./images/pic_cell03.png" alt="">
+					<img class="pic_cell02" src="./images/pic_cell02.png" alt="">
+					<img class="pic_cell01" src="./images/pic_cell01.png" alt="">
+				</div>
+				<div class="banner_txtbox">
+					<div class="left_txt banner_bigtxt" data-title="*ART_index_banner_title3*">*ART_index_banner_title3*</div>
+					<div class="banner_minitxt">
+						*ART_index_banner_txt3a*
+						*ART_index_banner_txt3b*
+						*ART_index_banner_txt3c*
+					</div>
+				</div>
+			</div>
+			<!-- banner 04 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item4" id="banner_item4">
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*ART_index_banner_title4*">*ART_index_banner_title4*</div>
+					<div class="banner_minitxt">
+						*ART_index_banner_txt4a*
+					</div>
+				</div>
+				<div class="banner_pic">
+					<img class="pic_peopel4" src="./images/pic_peopel4.png" alt="">
+					<img class="pic_peopel2" src="./images/pic_peopel2.png" alt="">
+					<img class="pic_peopel3" src="./images/pic_peopel3.png" alt="">
+					<!-- <img class="bg_banner02" src="../images/bg_banner02.png" alt=""> -->
+					<img class="pic_peopel1" src="./images/pic_peopel1.png" alt="">
+				</div>
+			</div>
+			<!-- banner 01 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item1" id="banner_item5">
+				<div class="banner_pic">
+					<img class="pic_cell1" src="./images/pic_cell1.png" alt="">
+					<img class="pic_cell2" src="./images/pic_cell2.png" alt="">
+					<img class="pic_cell3" src="./images/pic_cell3.png" alt="">
+					<img class="pic_cell4" src="./images/pic_cell4.png" alt="">
+				</div>
+				<div class="banner_txtbox">
+						<div class="banner_bigtxt" data-title="*ART_index_banner_bigtxt1*">
+							*ART_index_banner_bigtxt1*</div>
+						<ul class="txt_icon">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="banner_minitxt">
+							*ART_index_banner_title1*
+							*ART_index_banner_txt1a*
+							<br>
+							<br>
+							*ART_index_banner_txt1b*
+							*ART_index_banner_txt1c*
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		<button class="banner_btn prev" id="bannerPrev"></button>
+		<button class="banner_btn next" id="bannerNext"></button>
+		<!-- 目前的頁面 在class 加上 on -->
+		<ul class="banner_dots" id="banner_dots">
+			<li class="on"></li>
+			<li class=""></li>
+			<li class=""></li>
+			<li class=""></li>
+		</ul>
+	</div>
+	<!-- banner -->
+
+	<!-- 產品服務 -->
+	<div id="hm_2" class="product">
+		<div class="product_inf bg_triangle_in_out">
+			<div class="product_txt">
+				<div class="mod_midtxt">*ART_index_page3*</div>
+				<div class="mod_minitxt">
+					*ART_index_product_txt* 
+				</div>
+			</div>
+			<div class="product_pic">
+				<img class="product_p1 left_right_move" src="./images/product_p1.png" alt="">
+				<img class="product_p2 up_down_move" src="./images/product_p2.png" alt="">
+				<img class="product_p3 right_left_move" src="./images/product_p3.png" alt="">
+			</div>
+		</div>
+		<div class="game_box">
+			<ul class="game_list">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 產品服務 -->
+
+	<!-- 服務項目 -->
+	<div id="hm_3" class="service">
+		<div class="service_pic" >
+			<!-- 煙火動畫 -->
+			<div class="fireworks">
+				<div class="fire fire1">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+				<div class="fire fire2">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+				<div class="fire fire3">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+				<div class="fire fire4">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+
+			</div>
+			<!-- 煙火動畫 -->
+		</div>
+		<div class="txt_box">
+			<div class="mod_midtxt" data-title="SERVICE">*ART_index_page4*</div>
+			<div class="mod_minitxt">
+				*ART_index_service_txt*
+			</div>
+		</div>
+		
+		<div class="sp_btn_box">
+			<button class="sp_btn game_btn" id="lazyDemo" name="lazyDemo" value="lazyDemo" onclick="lazyDemo();" >
+				<div class="btn_inf">
+					<i class="icon_btn icon_advantages"></i>
+					<span class="txt">
+						<tt class="zh_txt">*ART_index_service_btn1*</tt>
+						<tt>Product advantages</tt>
+					</span>
+				</div>
+			</button>
+			<button class="sp_btn businese_btn" id="businese_btn">
+				<div class="btn_inf">
+					<i class="icon_btn icon_process"></i>
+					<span class="txt">
+						<tt class="zh_txt">*ART_index_service_btn2*</tt>
+						<tt>Cooperation Process</tt>
+					</span>
+				</div>
+			</button>
+		</div>
+	</div>
+	<!-- 服務項目 -->
+	
+	<!-- 合作流程 -->
+	<div id="hm_4" class="partner">
+		<!-- 光從左右中間打 -->
+		<div class="light">
+			<span class="light1"></span>
+			<span class="light2"></span>
+			<span class="light3"></span>
+			<span class="light4"></span>
+			<span class="light5"></span>
+			<span class="light6"></span>
+		</div>
+		<!-- 光從左右中間打 -->
+		<div class="mod_midtxt">*ART_index_page5*</div>
+		<ul class="partner_ul">
+			<li>
+				<div class="list_num">01</div>
+				<div class="list_txt txt_shadow" >
+					*ART_index_partner_txt1b*
+				</div>
+
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt1a*">*ART_index_partner_txt1a*</tt>
+				</span>
+			<li>
+				<div class="list_num">02</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt2b*
+				</div>
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt2a*">*ART_index_partner_txt2a*</tt>
+				</span>
+			</li>
+			<li>
+				<div class="list_num">03</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt3b*
+				</div>
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt3a*">*ART_index_partner_txt3a*</tt>
+				</span>
+			</li>
+			<li>
+				<div class="list_num">04</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt4b*
+				</div>
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt4a*">*ART_index_partner_txt4a*</tt>
+				</span>
+			</li>
+		</ul>
+		<ul class="partner_pic">
+			<li>
+				<img src="./images/pic_com1.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com2.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com3.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com4.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com2.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com1.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com4.png" alt="">
+			</li>
+			<li>
+				<img src="./images/pic_com3.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<!-- 合作流程 -->
+
+	<!-- 人才招募 -->
+	<div id="hm_5" class="recruit">
+		<div class="recruit_l">
+			<!-- 粒子動畫 -->
+			<ul class="bg_bubbles_in_out">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<!-- 粒子動畫 -->
+			<div class="txtbox">
+				<div class="mod_bigtxt txt_shadow">*ART_index_recruit_title*</div>
+			</div>
+		</div>
+		<div class="recruit_r">
+			<!-- 上下滑  transform: translateY(0 ~ -200%)-->
+			<div class="recruit_group" id="recruit_group">
+				<div class="recruit_item active"> 
+					<div class="sop">*ART_index_recruit_txt1a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt1b*
+						<!--只要你擅長其中一樣，且對技術狂熱，喜好接受挑戰。-->
+					</div>
+				</div>
+				<div class="recruit_item">
+					<div class="sop">*ART_index_recruit_txt2a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt2b*
+						
+					</div>
+				</div>
+				<div class="recruit_item">
+					<div class="sop">*ART_index_recruit_txt3a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt3b*
+					</div>
+				</div>
+				<div class="recruit_item"> 
+					<div class="sop">*ART_index_recruit_txt1a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt1b*
+					</div>
+				</div>
+			</div>
+
+			<!-- 目前的頁面 在class 加上 on -->
+			<ul class="recruit_dots" id="recruit_dots">
+				<li class="on" @click="change(0)"></li>
+				<li @click="change(1)"></li>
+				<li @click="change(2)"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 人才招募 -->
+
+	<!-- 聯絡我們 -->
+	<div id="hm_6" class="contact">
+		<!-- 動畫 -->
+		<ul class="bg_bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- 動畫 -->
+
+		<span class="contact_title">CONTACT US</span>
+		<div class="mod_minitxt">
+			IF YOU GOT ANY QUESTIONS<br>
+			PLEASE DO NOT HESTATE TO SEND US A MESSAGE
+		</div>
+		<div class="input_box">
+			<div class="input_box_l">
+				<input type="text" class="inp_move inp_txt" id="nameid" placeholder="Name">
+				<input type="text" class="inp_move inp_txt" id="country" placeholder="Country">
+				<input type="text" class="inp_move inp_txt" id="mail" placeholder="E-mail">
+				<div class="inp_move inp_group">
+					<input type="text" class="inp_move inp_txt" id="area" placeholder="area code">
+					<input type="text" class="inp_txt" id="tel" placeholder="Tel">
+				</div>
+				<div class="inp_move inp_group">
+					<label class="inp_txt mod_select" id="online_tel">
+						<select>
+							<option>skype</option>
+							<option>QQ</option>
+							<option>line</option>
+							<option>wechat</option>
+							<option>whatsapp</option>
+							<option>others</option>
+						</select>
+					</label>
+					<input type="text" class="inp_txt" id="message" placeholder="Messenger ID">
+				</div>
+				
+			</div>
+			<div class="input_box_r">
+				<input type="text" class="inp_move inp_txt" id="gaming" placeholder="Gaming Interested">
+				<input type="text" class="inp_move inp_txt" id="subject" placeholder="Subject">
+				<textarea type="text" class="inp_move inp_txt higger" id="content" placeholder="Content"></textarea>
+			</div>
+			<button class="submit_btn" id="send_btn">SEND</button>
+		</div>
+		<span class="contact_note txt_shadow">Connect with us!</span>
+		<ul class="method">
+			<li>*ART_index_contact*</li>
+			<li>danisme0921</li>
+			<li>xjack2004</li>
+			<li>service@mail.bb-in.com</li>
+		</ul>
+	</div>
+	<!-- 聯絡我們 -->
+
+	<footer>© 2020 I CASH Gaming. All Rights Reserved.</footer>
+	<!-- loading打開用 display:flex，動畫加上active -->
+	<div class="mask load active" id="load" >
+		<div class="circle_mask">
+			<div class="loading">
+				<div class="logo"></div>
+				<div class="load_num"><tt id="loadPercentNum">0</tt> %</div>
+				<div class="loading_box" id ="loading_box">
+					<div class="loading_bar">
+						<!-- 控制跑條 left:0~100% -->
+						<span id="light_bar" style="left: 0%;"></span>
+					</div>
+					<!-- 控制圓亮點 left:0~100% -->
+					<span class="light_ball" id="light_ball" style="left: 0%;"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 登入頁打開用 display:flex，動畫加上 active -->
+	<div class="mask login active" style="display: none" id="signIn">
+		<div class="login_box">
+			<button class="login_close_btn"></button>
+			<div class="login_pic">
+				<div class="txt">
+					<span class="mod_midtxt">I Cash</span>
+					<span class="mod_minitxt">Online Platform</span>
+				</div>
+			</div>
+			<div class="login_txt">
+				<div class="login_title txt_shadow">Sign Up</div>
+				<div class="login_acc">
+					<input class="login_inp" type="text" autocapitalize="off" placeholder="Username">
+				</div>
+				<div class="login_pwd">
+					<input class="login_inp" type="text" autocapitalize="off" placeholder="Password">
+				</div>
+				<label class="login_remember txt_shadow">
+					<input type="checkbox">
+					<span class="remember_inp"></span>
+					Remember me
+				</label>
+				<button class="login_btn">Login</button>
+				<a class="login_forgot_btn txt_shadow">Forgot your password?</a>
+			</div>
+		</div>
+	</div>
+</body>
+    <!-- 替換語系 -->
+	<script type="text/javascript" src="../tpljson/index.json"></script>
+	<script>
+		var langx=findGetParameter("langx");
+		load_art(document, artjson,langx);
+		
+	</script>
+</html>

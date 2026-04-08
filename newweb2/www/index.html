@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="renderer" content="webkit">
+	<title>Meta Global線上平台</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/animation.css">
+	<link rel="stylesheet" href="./style/index.css">
+	<link rel="shortcut icon" href="/Meta_logo.ico">
+	<link rel="icon" href="/Meta_logo.ico">
+	<link rel="apple-touch-icon" type="image/png" href="/Meta_logo.png">
+	<link rel="apple-touch-icon-precomposed" href="/Meta_logo.png">
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="/func/api_rec/api_demo.js"></script>
+</head>
+
+<body class="unScroll" ontouchstart="" onload="onload();">
+	<!-- 不能滑動 在body 加class="unScroll" -->
+	<!-- 最上列 -->
+	<div class="header">
+		<div class="logo logo_title"></div>
+		<!-- 手機版 打開menu在 .menu_btn + active -->
+		<div class="menu_btn" id="menu_btn">
+			<i></i>
+		</div>
+		<div class="menu_panel">
+			<ul class="menu" id="menu">
+				<li class="logo logo_title"></li>
+				<li id="menu_btn_hm1">
+					<a>*ART_index_page1* </a>
+				</li>
+				<li id="menu_btn_move_about" style="display: none;">
+					<a>*ART_index_page2*</a>
+				</li>
+				<li id="menu_btn_hm3" style="display: none;">
+					<a>*ART_index_page4*</a>
+				</li>
+				<li id="menu_btn_hm2">
+					<a>*ART_index_page3*</a>
+				</li>
+				<li id="menu_btn_hm4">
+					<a>*ART_index_page5*</a>
+				</li>
+				<li id="menu_btn_hm8" style="display: none;">
+					<a>*ART_index_page8*</a>
+				</li>
+				<li id="menu_btn_hm6" style="display: noneㄅ;">
+					<a>*ART_index_page6*</a>
+				</li>
+				<li id="menu_game_btn" style="display: none;">
+					<a class="menu_game_btn" href="http://fulladvantage.org" target="_blank">
+						*ART_index_service_btn1*
+					</a>
+				</li>
+				<li style="display: none">*ART_index_page7*</li>
+				<!-- 打開第二層選單，在class 加 on -->
+				<li id="menu_btn_langx" class="lang">
+					<span class="lang_txtbox">
+						<tt id="lang_title" class="lang_title">*ART_index_lang*</tt>
+						<tt id="lang_txt" class="lang_txt">繁體中文</tt>
+						<select id='second_menu_ph' class="lagn_ph">
+							<option value="zh-tw">繁體中文</option>
+							<option value="zh-cn">簡體</option>
+							<option value="en-us">English</option>
+							<option value="ko-kr">한국어</option>
+							<option value="ja-jp">日本語</option>
+							<option value="vi-vn">Việt Nam</option>
+							<option value="sa-in">हिन्दी</option>
+							<option value="th-th">ไทย</option>
+							<option value="km-kh">អក្ខរក្រមខេមរភាសា</option>
+						</select>
+					</span>
+					<ul id="second_menu_pc" class="second_menu">
+						<li value="zh-tw">繁體中文</li>
+						<li value="zh-cn">簡體</li>
+						<li value="en-us">English</li>
+						<li value="ko-kr">한국어</li>
+						<li value="ja-jp">日本語</li>
+						<li value="vi-vn">Việt Nam</li>
+						<li value="sa-in">हिन्दी</li>
+						<li value="th-th">ไทย</li>
+						<li value="km-kh">អក្ខរក្រមខេមរភាសា</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 最上列 -->
+	<!-- 首頁 -->
+	<!-- 登入loading跑完 加active -->
+	<div id="hm_1" class="home *ART_index_langtxt*">
+		<!-- 動畫 -->
+		<ul class="cloud_amimate">
+			<li></li>
+		</ul>
+		<!-- 動畫 -->
+		<div class="home_info">
+			<div class="mod_midtxt mod_font_en">
+				<p>LOCAL OPERATION</p>
+				<p>GLOBAL VISION</p>
+			</div>
+			<div class="home_txt">
+				<ul>
+					<li class="title">*ART_index_home_title*</li>
+					<li>*ART_index_home_txt1*</li>
+					<li>*ART_index_home_txt2*</li>
+					<li>*ART_index_home_txt3*</li>
+					<li>*ART_index_home_txt4*</li>
+					<li>*ART_index_home_txt5*</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 首頁 -->
+
+	<!-- banner -->
+	<div id="move_about" class="banner" style="display: none;">
+		<div class="banner_group" id="banner_group">
+			<!-- banner 01 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item1" id="banner_item1">
+				<div class="banner_pic">
+					<img class="pic_cell1" src="./images/pic_cell1.png" alt="">
+					<img class="pic_cell2" src="./images/pic_cell2.png" alt="">
+					<img class="pic_cell3" src="./images/pic_cell3.png" alt="">
+					<img class="pic_cell4" src="./images/pic_cell4.png" alt="">
+				</div>
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*ART_index_banner_bigtxt1*">
+						*ART_index_banner_bigtxt1*
+					</div>
+					<ul class="txt_icon">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="banner_minitxt">
+						*ART_index_banner_title1*
+						*ART_index_banner_txt1a*
+						<br>
+						<br>
+						*ART_index_banner_txt1b*
+						*ART_index_banner_txt1c*
+					</div>
+				</div>
+			</div>
+			<!-- banner 02 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item2" id="banner_item2">
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*
+					ART_index_page2*">*ART_index_page2*</div>
+					<div class="banner_minitxt">
+						*ART_index_banner_txt2t*
+						*ART_index_banner_txt2a*
+						<br>*ART_index_banner_txt2b*<br>*ART_index_banner_txt2c*
+					</div>
+				</div>
+				<div class="banner_pic">
+					<img class="icon_poker4" src="./images/icon_poker4.svg" alt="">
+					<img class="icon_poker3" src="./images/icon_poker3.svg" alt="">
+					<img class="icon_poker2" src="./images/icon_poker2.svg" alt="">
+					<img class="icon_poker1" src="./images/icon_poker1.svg" alt="">
+					<img src="./images/04.png" alt="">
+				</div>
+			</div>
+			<!-- banner 03 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item3" id="banner_item3">
+				<!-- <div class="icon_bmm"> -->
+				<img class="icon_bmm" src="./images/icon_bmm.svg" alt="">
+				<!-- </div> -->
+				<div class="banner_pic">
+					<img class="pic_cell04" src="./images/pic_cell03.jpg" alt="">
+					<img class="pic_cell05" src="./images/pic_cell05.jpg" alt="">
+					<img class="pic_cell03" src="./images/pic_cell04.jpg" alt="">
+					<img class="pic_cell02" src="./images/pic_cell02.jpg" alt="">
+					<img class="pic_cell01" src="./images/pic_cell01.jpg" alt="">
+				</div>
+				<div class="banner_txtbox">
+					<div class="left_txt banner_bigtxt" data-title="*ART_index_banner_title3*">
+						<!-- *ART_index_banner_title3* -->
+					</div>
+					<div class="banner_minitxt">
+						<!-- *ART_index_banner_txt3a*
+						*ART_index_banner_txt3b*
+						*ART_index_banner_txt3c* -->
+					</div>
+				</div>
+			</div>
+			<!-- banner 04 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item4" id="banner_item4">
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*ART_index_banner_title4*">*ART_index_banner_title4*</div>
+					<div class="banner_minitxt">
+						*ART_index_banner_txt4a*
+					</div>
+				</div>
+				<div class="banner_pic">
+					<img class="pic_peopel4" src="./images/pic_peopel4.png" alt="">
+					<img class="pic_peopel2" src="./images/pic_peopel2.png" alt="">
+					<img class="pic_peopel3" src="./images/pic_peopel3.png" alt="">
+					<!-- <img class="bg_banner02" src="../images/bg_banner02.png" alt=""> -->
+					<img class="pic_peopel1" src="./images/pic_peopel1.png" alt="">
+				</div>
+			</div>
+			<!-- banner 01 -->
+			<!-- 當前畫面在class 加active離開後active要拿掉 -->
+			<div class="banner_item banner_item1" id="banner_item5">
+				<div class="banner_pic">
+					<img class="pic_cell1" src="./images/pic_cell1.png" alt="">
+					<img class="pic_cell2" src="./images/pic_cell2.png" alt="">
+					<img class="pic_cell3" src="./images/pic_cell3.png" alt="">
+					<img class="pic_cell4" src="./images/pic_cell4.png" alt="">
+				</div>
+				<div class="banner_txtbox">
+					<div class="banner_bigtxt" data-title="*ART_index_banner_bigtxt1*">
+						*ART_index_banner_bigtxt1*</div>
+					<ul class="txt_icon">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="banner_minitxt">
+						*ART_index_banner_title1*
+						*ART_index_banner_txt1a*
+						<br>
+						<br>
+						*ART_index_banner_txt1b*
+						*ART_index_banner_txt1c*
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="banner_btn prev" id="bannerPrev"></button>
+		<button class="banner_btn next" id="bannerNext"></button>
+		<!-- 目前的頁面 在class 加上 on -->
+		<ul class="banner_dots" id="banner_dots">
+			<li class="on"></li>
+			<li class=""></li>
+			<li class=""></li>
+			<li class=""></li>
+		</ul>
+	</div>
+	<!-- banner -->
+
+	<!-- 服務項目 -->
+	<div id="hm_3" class="service *ART_index_langtxt*" style="display: none;">
+		<div class="service_pic">
+			<!-- 煙火動畫 -->
+			<div class="fireworks">
+				<div class="fire fire1">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+				<div class="fire fire2">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+				<div class="fire fire3">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+				<div class="fire fire4">
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+					<div class="punt"></div>
+				</div>
+
+			</div>
+			<!-- 煙火動畫 -->
+		</div>
+		<div class="txt_box">
+			<div class="mod_midtxt" data-title="SERVICE">*ART_index_page4*</div>
+			<div class="mod_minitxt">
+				*ART_index_service_txt*
+			</div>
+		</div>
+
+		<div class="sp_btn_box">
+			<!-- <button class="sp_btn game_btn" id="lazyDemo" name="lazyDemo" value="lazyDemo" onclick="lazyDemo();">
+				<div class="btn_inf">
+					<i class="icon_btn icon_advantages"></i>
+					<span class="txt">
+						<tt class="big_txt">*ART_index_service_btn1*</tt>
+						<tt>Product advantages</tt>
+					</span>
+				</div>
+			</button> -->
+			<button class="sp_btn businese_btn" id="businese_btn">
+				<div class="btn_inf">
+					<i class="icon_btn icon_process"></i>
+					<span class="txt">
+						<tt class="big_txt">*ART_index_service_btn2*</tt>
+						<tt>Cooperation Process</tt>
+					</span>
+				</div>
+			</button>
+		</div>
+	</div>
+	<!-- 服務項目 -->
+
+	<!-- 產品服務 -->
+	<div id="hm_2" class="product">
+		<div class="product_inf bg_triangle_in_out">
+			<div class="product_txt">
+				<div class="mod_midtxt">*ART_index_page3*</div>
+				<div class="mod_minitxt">
+					*ART_index_product_txt*
+				</div>
+			</div>
+			<div class="product_pic">
+				<img class="product_p1 left_right_move" src="./images/product_p1.png" alt="">
+				<img class="product_p2 up_down_move" src="./images/product_p2.png" alt="">
+				<img class="product_p3 right_left_move" src="./images/product_p3.png" alt="">
+			</div>
+		</div>
+		<div class="game_box">
+			<ul class="game_list">
+				<li data-txt="*ART_index_game_list1*"></li>
+				<li data-txt="*ART_index_game_list2*"></li>
+				<li data-txt="*ART_index_game_list3*"></li>
+				<li data-txt="*ART_index_game_list4*"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 產品服務 -->
+
+	<!-- 合作流程 -->
+	<div id="hm_4" class="partner *ART_index_langtxt*">
+		<!-- 光從左右中間打 -->
+		<div class="light">
+			<span class="light1"></span>
+			<span class="light2"></span>
+			<span class="light3"></span>
+			<span class="light4"></span>
+			<span class="light5"></span>
+			<span class="light6"></span>
+		</div>
+		<!-- 光從左右中間打 -->
+		<div class="mod_midtxt">*ART_index_page5*</div>
+		<ul class="partner_ul" style="margin-bottom: 80px;">
+			<li>
+				<div class="list_num">01</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt1b*
+				</div>
+
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt1a*">*ART_index_partner_txt1a*</tt>
+				</span>
+			<li>
+				<div class="list_num">02</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt2b*
+				</div>
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt2a*">*ART_index_partner_txt2a*</tt>
+				</span>
+			</li>
+			<li>
+				<div class="list_num">03</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt3b*
+				</div>
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt3a*">*ART_index_partner_txt3a*</tt>
+				</span>
+			</li>
+			<li>
+				<div class="list_num">04</div>
+				<div class="list_txt txt_shadow">
+					*ART_index_partner_txt4b*
+				</div>
+				<span class="sop">
+					<tt class="gradient" data-title="*ART_index_partner_txt4a*">*ART_index_partner_txt4a*</tt>
+				</span>
+			</li>
+		</ul>
+		<ul class="partner_pic" style="display: none;">
+			<li>
+				<img src="./images/icon_ibo.png" alt="">
+			</li>
+			<li>
+				<img src="./images/icon_iba.png" alt="">
+			</li>
+			<li>
+				<img src="./images/icon_cf.png" alt="">
+			</li>
+			<li>
+				<img src="./images/icon_ifa.png" alt="">
+			</li>
+			<li>
+				<img src="./images/logo_iba_w.png" alt="">
+			</li>
+			<li>
+				<img src="./images/icon_iw.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<!-- 合作流程 -->
+
+	<!-- 合作廠商 -->
+	<div id="hm_7" class="supplier active" style="display: none;">
+		<div class="supplier_title">*ART_index_page8*</div>
+		<div class="supplier_txt"></div>
+		<ul class="supplier_logo">
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo1.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo2.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo3.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo4.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo5.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo6.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo7.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo8.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo9.png" alt="">
+			</li>
+			<li class="supplier_logo_item">
+				<img src="./images/supplier_logo10.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<!-- 合作廠商 -->
+
+	<!-- 人才招募 -->
+	<div id="hm_5" class="recruit" style="display: none;">
+		<div class="recruit_l">
+			<!-- 粒子動畫 -->
+			<ul class="bg_bubbles_in_out">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<!-- 粒子動畫 -->
+			<div class="txtbox">
+				<div class="mod_bigtxt txt_shadow">*ART_index_recruit_title*</div>
+			</div>
+		</div>
+		<div class="recruit_r">
+			<!-- 上下滑  transform: translateY(0 ~ -200%)-->
+			<div class="recruit_group" id="recruit_group">
+				<div class="recruit_item active">
+					<div class="sop">*ART_index_recruit_txt1a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt1b*
+						<!--只要你擅長其中一樣，且對技術狂熱，喜好接受挑戰。-->
+					</div>
+				</div>
+				<div class="recruit_item">
+					<div class="sop">*ART_index_recruit_txt2a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt2b*
+
+					</div>
+				</div>
+				<div class="recruit_item">
+					<div class="sop">*ART_index_recruit_txt3a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt3b*
+					</div>
+				</div>
+				<div class="recruit_item">
+					<div class="sop">*ART_index_recruit_txt1a*</div>
+					<div class="recruit_txt mod_minitxt">
+						*ART_index_recruit_txt1b*
+					</div>
+				</div>
+			</div>
+
+			<!-- 目前的頁面 在class 加上 on -->
+			<ul class="recruit_dots" id="recruit_dots">
+				<li class="on" @click="change(0)"></li>
+				<li @click="change(1)"></li>
+				<li @click="change(2)"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 人才招募 -->
+
+	<!-- 聯絡我們 -->
+	<div id="hm_6" class="contact">
+		<!-- 動畫 -->
+		<ul class="bg_bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- 動畫 -->
+
+		<span class="contact_title">CONTACT US</span>
+		<div class="mod_minitxt">
+			IF YOU GOT ANY QUESTIONS<br>
+			PLEASE DO NOT HESTATE TO SEND US A MESSAGE
+		</div>
+
+		<ul class="contact_box">
+			<li class="inp_move">
+				<a class="mail" href="mailto:service@wework365778899.net">service@wework365778899.net</a>
+			</li>
+		</ul>
+
+		<button class="submit_btn" id="send_btn" style="display: none">SEND</button>
+
+	</div>
+	<!-- 聯絡我們 -->
+
+	<footer>© 2026 Meta Global. All Rights Reserved.</footer>
+	<!-- 登入loading打開用 display:flex，動畫加上active -->
+	<div class="mask load active" id="load">
+		<div class="circle_mask">
+			<div class="loading">
+				<div class="loading_logo"></div>
+				<div class="load_num"><tt id="loadPercentNum">0</tt> %</div>
+				<div class="loading_box" id="loading_box">
+					<div class="loading_bar">
+						<!-- 控制跑條 left:0~100% -->
+						<span id="light_bar" style="left: 0%;"></span>
+					</div>
+					<!-- 控制圓亮點 left:0~100% -->
+					<span class="light_ball" id="light_ball" style="left: 0%;"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- loading 打開class加on-->
+	<div id="normal_loading" class="normal_loading">
+		<div class="lds-default">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="normal_loading_txt">*ART_index_normalLoadingTxt*</div>
+	</div>
+	<!-- loading -->
+
+	<!-- 登入頁打開用 display:flex，動畫加上 active -->
+	<div class="mask login active" style="display: none" id="signIn">
+		<div class="login_box">
+			<button class="login_close_btn"></button>
+			<div class="login_pic">
+				<div class="txt">
+					<span class="mod_midtxt">I Cash</span>
+					<span class="mod_minitxt">Online Platform</span>
+				</div>
+			</div>
+			<div class="login_txt">
+				<div class="login_title txt_shadow">Sign Up</div>
+				<div class="login_acc">
+					<input class="login_inp" type="text" autocapitalize="off" placeholder="Username">
+				</div>
+				<div class="login_pwd">
+					<input class="login_inp" type="text" autocapitalize="off" placeholder="Password">
+				</div>
+				<label class="login_remember txt_shadow">
+					<input type="checkbox">
+					<span class="remember_inp"></span>
+					Remember me
+				</label>
+				<button class="login_btn">Login</button>
+				<a class="login_forgot_btn txt_shadow">Forgot your password?</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 選擇幣別 打開class加on-->
+	<div id='logindiv' class="mask alert _currency">
+		<div class="alert_box">
+			<button id='loginclose' class="alert_close"></button>
+			<!-- 當前頁籤在li加上 on-->
+			<ul class="alert_tab loginMem">
+				<li id='free' class="alert_tab_item _free on">
+					<span>*ART_index_alertGame*</span>
+				</li>
+				<li id='acc' class="alert_tab_item ">
+					<span>*ART_index_alertLogin*</span>
+				</li>
+			</ul>
+			<!-- 帳號登入 class加上loginMem，免費試玩class加上game-->
+			<div id='logindisplay' class="alert_body loginMem">
+				<div class="alert_title login_show">*ART_index_page7*</div>
+				<div class="login_input login_show">
+					<input type="text" placeholder="*ART_index_alertAcc*">
+					<input type="password" placeholder="*ART_index_alertPass*">
+				</div>
+				<div class="alert_title">*ART_index_choseCurrency*</div>
+
+				<!-- 幣別下拉 打開class加on-->
+				<label class="normal_select">
+					<!-- 電腦用自製下拉 -->
+					<span class="normal_select_title select_showPC">人民幣</span>
+					<!-- 手機用內建下拉 -->
+					<select id="curselect" class="select_showPH">
+						<option value="RMB">*ART_index_rmb*</option>
+						<option value="HKD">*ART_index_hkd*</option>
+						<option value="USD">*ART_index_usd*</option>
+						<option value="MYR">*ART_index_myr*</option>
+						<option value="SGD">*ART_index_sgd*</option>
+						<option value="THB">*ART_index_thb*</option>
+						<option value="GBP">*ART_index_gbp*</option>
+						<option value="JPY">*ART_index_jqy*</option>
+						<option value="EUR">*ART_index_eur*</option>
+						<option value="IND">*ART_index_ind*</option>
+						<!-- <option value="NTD">*ART_index_ntd*</option>
+						<option value="GOD">*ART_index_god*</option> -->
+						<option value="VND">*ART_index_vnd*</option>
+						<option value="KRW">*ART_index_krw*</option>
+						<option value="INR">*ART_index_inr*</option>
+						<option value="USDT">*ART_index_usdt*</option>
+						<option value="BRL">*ART_index_brl*</option>
+						<option value="PHP">*ART_index_php*</option>
+					</select>
+				</label>
+				<ul class="alert_ul select_showPC">
+					<li data-type='cur' data-value="RMB">*ART_index_rmb*</li>
+					<li data-type='cur' data-value="HKD">*ART_index_hkd*</li>
+					<li data-type='cur' data-value="USD">*ART_index_usd*</li>
+					<li data-type='cur' data-value="MYR">*ART_index_myr*</li>
+					<li data-type='cur' data-value="SGD">*ART_index_sgd*</li>
+					<li data-type='cur' data-value="THB">*ART_index_thb*</li>
+					<li data-type='cur' data-value="GBP">*ART_index_gbp*</li>
+					<li data-type='cur' data-value="JPY">*ART_index_jqy*</li>
+					<li data-type='cur' data-value="EUR">*ART_index_eur*</li>
+					<li data-type='cur' data-value="IND">*ART_index_ind*</li>
+					<!-- <li data-type='cur' data-value="NTD">*ART_index_ntd*</li>
+					<li data-type='cur' data-value="GOD">*ART_index_god*</li> -->
+					<li data-type='cur' data-value="VND">*ART_index_vnd*</li>
+					<li data-type='cur' data-value="KRW">*ART_index_krw*</li>
+					<li data-type='cur' data-value="INR">*ART_index_inr*</li>
+					<li data-type='cur' data-value="USDT">*ART_index_usdt*</li>
+					<li data-type='cur' data-value="BRL">*ART_index_brl*</li>
+					<li data-type='cur' data-value="PHP">*ART_index_php*</li>
+				</ul>
+			</div>
+			<div class="alert_func">
+				<button id='loginbtn' class="normal_btn">*ART_index_page7*</button>
+			</div>
+
+		</div>
+	</div>
+</body>
+<!-- 替換語系 -->
+<script type="text/javascript" src="./tpljson/index.json"></script>
+<script>
+	var langx = findGetParameter("langx");
+	load_art(document, artjson, langx);
+</script>
+
+</html>

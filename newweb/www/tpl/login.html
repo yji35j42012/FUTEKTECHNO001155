@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../style/reset.css">
+	<link rel="stylesheet" href="../style/login.css">
+	<script type="text/javascript" src="./js/login.js"></script>
+</head>
+
+<body>
+	<div  id='logindisplay' class="login_container">
+		<div class="login_box">
+			<!-- 語系下拉 打開class加on-->
+			<label id="menu_btn_langx" class="normal_select">
+				<span id="lang_txt" class="select_showPC">繁體</span>
+				<!-- 電腦用自製下拉 當前語系在class加on-->
+				<ul id="second_menu_pc" class="normal_select_ul select_showPC">
+					<li value="zh-tw">繁體中文</li>
+					<li value="zh-cn">簡體</li>
+					<li value="en-us">English</li>
+				</ul>
+				<select id='second_menu_ph' name="select" id="langx" class="select_showPH">
+					<option value="zh-tw">繁體</option>
+					<option value="zh-cn">簡體</option>
+					<option value="zh-cn">英文</option>
+				</select>
+			</label>
+			<div class="login_info">
+				<div class="login_box_title">SIGN IN</div>
+				<label class="login_input _acc">
+					<input type="text" name="text" autocapitalize="off" placeholder="Username">
+				</label>
+				<label class="login_input _pass">
+					<input type="password" name="text" placeholder="Password">
+				</label>
+				<label class="login_checkbox">
+					<input name="button" type="checkbox" id="remember">
+					<span></span>
+					記住帳號
+				</label>
+				<button id='loginbtn'  name="button" class="login_btn">Login</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
