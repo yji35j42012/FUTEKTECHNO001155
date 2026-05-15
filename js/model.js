@@ -29,37 +29,6 @@ wrap_head.innerHTML = `
 var wrap_footer = document.querySelector("#wrap_footer");
 wrap_footer.innerHTML = `
 <div class="footer_con">
-<div class="focus_us">
-	<h3 class="tit">Follow Us</h3>
-	<ul class="focus_list">
-		<li>
-			<a href="#" class="wechat-btn">
-				<i class="icon i_wechat"></i>
-				<img class="wechat-code" src="./img/index/wechat-code.jpg" alt="img" />
-			</a>
-		</li>
-		<li>
-			<a href="https://weibo.com/tencent" target="_blank">
-				<i class="icon i_weibo"></i>
-			</a>
-		</li>
-		<li>
-			<a href="https://twitter.com/TencentGlobal" target="_blank">
-				<i class="icon i_twitter"></i>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.linkedin.com/company/tencent/" target="_blank">
-				<i class="icon i_in"></i>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.youtube.com/@TencentGlobal" target="_blank">
-				<i class="icon i_you"></i>
-			</a>
-		</li>
-	</ul>
-</div>
 
 
 <div class="contact_us">
@@ -110,7 +79,7 @@ wrap_footer.innerHTML = `
 		(R.O.C.)</div>
 		<a style='color:#5f6464' href="mailto:service@futektechno001155.com" class="email-link">service@futektechno001155.com</a>
 	<div class="copyright">
-		Copyright © 1998 - 2026 Tencent. All Rights Reserved.
+		Copyright © 1998 - 2026 . All Rights Reserved.
 		<br class="flag_m" /> 
 		<br class="flag_m" />FUTEK TECHNOLOGY
 	</div>
